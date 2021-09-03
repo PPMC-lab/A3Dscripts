@@ -1,0 +1,8 @@
+import requests
+import json
+
+url_2='http://biocomp.chem.uw.edu.pl/A3D2/RESTful/job/jobid1/'
+req = requests.get(url_2)
+data = req.json() 
+a3d_av_score = data['A3Dscore']['avg']
+print(a3d_av_score)
